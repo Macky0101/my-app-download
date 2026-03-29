@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Télécharger l'APK</title>
+  <style>
+    /* Fonts et reset simple */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f4f4f9; color: #333; display: flex; justify-content: center; align-items: center; min-height: 100vh; padding: 20px; }
+    
+    .container { background: #fff; border-radius: 15px; padding: 30px 20px; max-width: 450px; width: 100%; box-shadow: 0 8px 20px rgba(0,0,0,0.1); text-align: center; }
+
+    h1 { font-size: 1.8em; margin-bottom: 15px; color: #007bff; }
+    p.subtitle { font-size: 1em; margin-bottom: 25px; color: #555; }
+
+    .btn { display: inline-block; padding: 15px 25px; background: #28a745; color: #fff; text-decoration: none; font-weight: bold; border-radius: 50px; transition: 0.3s; margin-bottom: 20px; }
+    .btn:hover { background: #218838; transform: translateY(-2px); }
+
+    .qr img { width: 150px; height: 150px; margin-top: 10px; }
+
+    .instructions { text-align: left; margin-top: 30px; background: #f1f5f9; padding: 15px 20px; border-radius: 10px; font-size: 0.9em; }
+    .instructions h2 { font-size: 1.1em; color: #007bff; margin-bottom: 10px; }
+    .instructions li { margin-bottom: 8px; }
+
+    footer { margin-top: 20px; font-size: 0.8em; color: #aaa; }
+    
+    @media(max-width:500px){
+      .container { padding: 20px 15px; }
+      h1 { font-size: 1.5em; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>📱 Téléchargez notre APK</h1>
+    <p class="subtitle">Installation rapide pour Android</p>
+
+    <!-- Bouton de téléchargement -->
+    <a class="btn" href="https://github.com/Macky0101/my-app-download/releases/download/v1.0/app-release.apk" download>
+      Télécharger APK
+    </a>
+
+    <!-- QR code -->
+    <div class="qr">
+      <p>Ou scannez pour télécharger :</p>
+      <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://github.com/Macky0101/my-app-download/releases/download/v1.0/app-release.apk" alt="QR Code APK">
+    </div>
+
+    <!-- Instructions pour sources inconnues -->
+    <div class="instructions">
+      <h2>Comment installer :</h2>
+      <ol>
+        <li>Allez dans <strong>Paramètres → Sécurité</strong> de votre téléphone.</li>
+        <li>Activez <strong>"Installer des applications de sources inconnues"</strong> pour votre navigateur ou gestionnaire de fichiers.</li>
+        <li>Téléchargez l'APK via le bouton ou le QR code.</li>
+        <li>Ouvrez le fichier téléchargé et installez l'application.</li>
+        <li>Après l'installation, vous pouvez désactiver les sources inconnues pour plus de sécurité.</li>
+      </ol>
+    </div>
+
+  </div>
+</body>
+</html>
